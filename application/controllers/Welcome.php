@@ -13,7 +13,7 @@ class Welcome extends CI_Controller {
 			else
 					{	
 						$this->load->model("ekologiya_model");
-						$data['users'] = $this ->ekologiya_model->get_users();
+						$data['users'] = $this->ekologiya_model->get_users();
 						$this->load->view('welcome_message',$data);
 					}
 		}
@@ -25,7 +25,7 @@ class Welcome extends CI_Controller {
 				    }
 			else
 					{					
-						$this->load->view('admin/admin',$data);					
+						$this->load->view('admin/admin');					
 					}
 		}
 
